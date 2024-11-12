@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define custom fonts */
+@font-face {
+  font-family: 'GeistMono';
+  src: url('/fonts/GeistMonoVF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/GeistVF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Define light/dark mode colors */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Apply custom fonts */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Geist', Arial, Helvetica, sans-serif; /* Apply custom font */
+}
+
+/* Add custom utility class */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
