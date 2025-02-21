@@ -19,7 +19,7 @@ export default function CreatePhotoBook() {
 
   const startEditor = () => {
     router.push({
-      pathname: 'http://localhost:3001/editor',
+      pathname: 'http://localhost:3000/editor',
       query: bookConfig,
     });
   };

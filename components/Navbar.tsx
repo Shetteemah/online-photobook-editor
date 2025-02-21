@@ -26,7 +26,7 @@ export default function Navbar() {
           <Link href="/gifts" className="hover:text-blue-500 text-gray-700">
             Gifts
           </Link>
-          <Link href="http://localhost:3001/editor" className="hover:text-blue-500 text-gray-700">
+          <Link href="/editor/templateId" className="hover:text-blue-500 text-gray-700">
             My Projects
           </Link>
 
